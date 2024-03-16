@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Library</title>
+</head>
+<body>
+    <h1>
+        Title
+    </h1>
+
+    <form id = "form">
+        <div>
+            <label for = "title"> Title:</label>
+            <input 
+                id = "title"
+                name = "title"
+                input = "text"
+                placeholder= "Moby Dick"
+                required>
+        </div>
+
+        <div>
+            <label for = "author"> Author: </label>
+            <input 
+                id = "author"
+                name = "author"
+                type = "text"
+                placeholder = "James Patterson"
+                required>
+        </div>
+        
+        <div>
+            <label for = "pages">Pages: </label>
+            <input
+                id = "pages"
+                name = "pages"
+                type = "number"
+                placeholder = "497"
+                required>
+        </div>
+
+        <div>
+            <label for = "has_read">Read: </label>
+            <input
+                id = "has_read"
+                name = "read"
+                type = "radio"
+                value = "turtles">
+
+            <label for = "not_read">Unread: </label>
+            <input 
+                id = "not_read"
+                name = "read"
+                type = "radio"
+                value = "beavers">
+        </div>
+
+        <button type = "submit"> Add Book</button>
+
+    </form>
+    <br>
+
+    <div id = "library">
+        <div class = "book">
+            James Patterson
+        </div>
+        <div class = "book">
+            Toby Keith
+        </div>
+    </div>
+    
+
+    <script src = "index.js"></script>
+</body>
+</html>
