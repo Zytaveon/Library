@@ -1,9 +1,49 @@
-.book{
-    background-color: yellow;
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.book{
+    display: flex;
+    background-color: yellow;
+    font-size: large;
+}
+
+.bookButton{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+}
+
+.readButton{
+    background-color: green;
+}
+
+.unreadButton{
+    background-color: red;
+}
+
+.buttonContainer{
+    flex: 1;
+}
+
 
 #library{
     display: flex;
     background-color: green;
     flex-direction: column;
+    scroll-behavior: smooth;
+    background-position: 20%;
+    overflow: scroll;
+    height: 40rem;
+    margin: 2rem;
+    width: 55%;
+    position:relative;
+    overflow-x: hidden;
 }
+
+
+
+
